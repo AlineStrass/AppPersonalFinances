@@ -1,0 +1,115 @@
+/**
+ * Variáveis CSS do Sistema Financeiro
+ * Formato: HSL (Hue, Saturation, Lightness)
+ * Uso: color: hsl(var(--primary-color));
+ */
+
+:root {
+  /* ========================================
+     CORES PRIMÁRIAS
+     ======================================== */
+  --primary-color: 210 79% 46%; /* Azul profissional */
+  --primary-dark: 210 79% 36%; /* Azul escuro */
+  --primary-light: 210 79% 66%; /* Azul claro */
+
+  --secondary-color: 200 18% 46%; /* Cinza azulado */
+  --secondary-dark: 200 18% 26%; /* Cinza azulado escuro */
+  --secondary-light: 200 18% 76%; /* Cinza azulado claro */
+
+  /* ========================================
+     CORES DE ESTADO
+     ======================================== */
+  --success-color: 142 71% 45%; /* Verde - sucesso, positivo */
+  --success-light: 142 71% 65%; /* Verde claro */
+  --success-dark: 142 71% 35%; /* Verde escuro */
+
+  --danger-color: 0 72% 51%; /* Vermelho - erro, negativo */
+  --danger-light: 0 72% 71%; /* Vermelho claro */
+  --danger-dark: 0 72% 41%; /* Vermelho escuro */
+
+  --warning-color: 38 92% 50%; /* Laranja - aviso */
+  --warning-light: 38 92% 70%; /* Laranja claro */
+  --warning-dark: 38 92% 40%; /* Laranja escuro */
+
+  --info-color: 199 89% 48%; /* Azul claro - informação */
+  --info-light: 199 89% 68%; /* Azul claro */
+  --info-dark: 199 89% 38%; /* Azul claro escuro */
+
+  /* ========================================
+     CORES NEUTRAS
+     ======================================== */
+  --white: 0 0% 100%; /* Branco */
+  --black: 0 0% 0%; /* Preto */
+
+  --gray-50: 210 20% 98%; /* Cinza muito claro */
+  --gray-100: 210 20% 95%; /* Cinza claro */
+  --gray-200: 210 16% 93%; /* Cinza */
+  --gray-300: 210 14% 89%; /* Cinza */
+  --gray-400: 210 14% 83%; /* Cinza médio */
+  --gray-500: 210 11% 71%; /* Cinza */
+  --gray-600: 210 9% 31%; /* Cinza escuro */
+  --gray-700: 210 10% 23%; /* Cinza muito escuro */
+  --gray-800: 210 11% 15%; /* Quase preto */
+  --gray-900: 210 11% 9%; /* Muito escuro */
+
+  /* ========================================
+     CORES DE TEXTO
+     ======================================== */
+  --text-primary: 210 11% 15%; /* Texto principal (escuro) */
+  --text-secondary: 210 9% 31%; /* Texto secundário */
+  --text-muted: 210 11% 71%; /* Texto esmaecido */
+  --text-disabled: 210 14% 83%; /* Texto desabilitado */
+  --text-on-dark: 0 0% 100%; /* Texto em fundo escuro */
+
+  /* ========================================
+     CORES DE FUNDO
+     ======================================== */
+  --bg-primary: 0 0% 100%; /* Fundo principal (branco) */
+  --bg-secondary: 210 20% 98%; /* Fundo secundário */
+  --bg-tertiary: 210 20% 95%; /* Fundo terciário */
+  --bg-dark: 210 11% 15%; /* Fundo escuro */
+  --bg-overlay: 0 0% 0%; /* Overlay (usado com opacidade) */
+
+  /* ========================================
+     CORES DE BORDA
+     ======================================== */
+  --border-light: 210 20% 95%; /* Borda clara */
+  --border-default: 210 14% 89%; /* Borda padrão */
+  --border-dark: 210 14% 83%; /* Borda escura */
+  --border-focus: 210 79% 46%; /* Borda em foco */
+
+  /* ========================================
+     CORES FINANCEIRAS ESPECÍFICAS
+     ======================================== */
+  --income-color: 142 71% 45%; /* Verde - receita */
+  --expense-color: 0 72% 51%; /* Vermelho - despesa */
+  --balance-positive: 142 71% 45%; /* Verde - saldo positivo */
+  --balance-negative: 0 72% 51%; /* Vermelho - saldo negativo */
+  --neutral-color: 210 11% 71%; /* Cinza - neutro */
+
+  /* ========================================
+     ESPAÇAMENTOS
+     ======================================== */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
+
+  /* ========================================
+     RAIOS DE BORDA
+     ======================================== */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-full: 9999px; /* Redondo completo */
+
+  /* ========================================
+     SOMBRAS
+     ======================================== */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}

@@ -1,0 +1,288 @@
+/**
+ * Tipografia do Sistema Financeiro
+ * Fontes, tamanhos, pesos e estilos de texto
+ */
+
+/* ========================================
+   IMPORTAÇÃO DE FONTES
+   ======================================== */
+
+/* Google Fonts - Inter (fonte principal) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Google Fonts - Roboto Mono (para números/código) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+/* ========================================
+   VARIÁVEIS DE FONTE
+   ======================================== */
+
+:root {
+  /* Famílias de fonte */
+  --font-family-base:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    sans-serif;
+  --font-family-mono: 'Roboto Mono', 'Courier New', monospace;
+  --font-family-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Tamanhos de fonte - Escala tipográfica (base 16px com escala 1.2) */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px - padrão */
+  --font-size-md: 1.125rem; /* 18px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 1.875rem; /* 30px */
+  --font-size-3xl: 2.25rem; /* 36px */
+  --font-size-4xl: 3rem; /* 48px */
+  --font-size-5xl: 3.75rem; /* 60px */
+
+  /* Pesos de fonte */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Altura de linha (line-height) */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Espaçamento de letras (letter-spacing) */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+}
+
+/* ========================================
+   ESTILOS GLOBAIS DE TEXTO
+   ======================================== */
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: hsl(var(--text-primary));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   TÍTULOS (HEADINGS)
+   ======================================== */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: hsl(var(--text-primary));
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ========================================
+   PARÁGRAFOS E TEXTO
+   ======================================== */
+
+p {
+  /* margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: var(--line-height-relaxed); */
+}
+
+/* Texto pequeno */
+small,
+.text-small {
+  /* font-size: var(--font-size-sm);  */
+}
+
+/* Texto extra pequeno */
+.text-xs {
+  /* font-size: var(--font-size-xs); */
+}
+
+/* Texto grande */
+.text-large {
+  /* font-size: var(--font-size-lg); */
+}
+
+/* Lead text (texto de destaque) */
+.lead {
+  /* font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-relaxed);
+  color: hsl(var(--text-secondary)); */
+}
+
+/* ========================================
+   CLASSES UTILITÁRIAS
+   ======================================== */
+
+/* Tamanhos de fonte */
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+.text-base {
+  font-size: var(--font-size-base);
+}
+.text-md {
+  font-size: var(--font-size-md);
+}
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+.text-2xl {
+  font-size: var(--font-size-2xl);
+}
+.text-3xl {
+  font-size: var(--font-size-3xl);
+}
+.text-4xl {
+  font-size: var(--font-size-4xl);
+}
+
+/* Pesos de fonte */
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+
+/* Cores de texto */
+/* .text-primary { color: hsl(var(--text-primary)); }
+.text-secondary { color: hsl(var(--text-secondary)); }
+.text-muted { color: hsl(var(--text-muted)); }
+.text-disabled { color: hsl(var(--text-disabled)); }
+.text-white { color: hsl(var(--white)); } */
+
+/* Cores de estado no texto */
+/* .text-success { color: hsl(var(--success-color)); }
+.text-danger { color: hsl(var(--danger-color)); }
+.text-warning { color: hsl(var(--warning-color)); }
+.text-info { color: hsl(var(--info-color)); } */
+
+/* Alinhamento de texto */
+/* .text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; } */
+
+/* Transformação de texto */
+/* .uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; } */
+
+/* Decoração de texto */
+/* .underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.no-underline { text-decoration: none; } */
+
+/* Estilo de fonte */
+/* .italic { font-style: italic; }
+.not-italic { font-style: normal; } */
+
+/* Quebra de texto */
+.truncate {
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.break-words {
+  /* overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word; */
+}
+
+/* ========================================
+   ESTILOS ESPECÍFICOS FINANCEIROS
+   ======================================== */
+
+/* Valores monetários */
+.currency,
+.amount {
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Valores positivos (receita) */
+.amount-positive {
+  color: hsl(var(--income-color));
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Valores negativos (despesa) */
+.amount-negative {
+  color: hsl(var(--expense-color));
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Labels/etiquetas */
+.label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: hsl(var(--text-secondary));
+}
+
+/* Código/números de conta */
+.code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  background: hsl(var(--gray-100));
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  color: hsl(var(--text-primary));
+}

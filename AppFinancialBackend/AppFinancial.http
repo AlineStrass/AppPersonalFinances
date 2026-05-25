@@ -1,0 +1,6 @@
+@AppFinancial_HostAddress = http://localhost:5150
+
+GET {{AppFinancial_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

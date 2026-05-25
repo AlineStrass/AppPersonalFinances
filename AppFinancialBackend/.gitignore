@@ -1,0 +1,68 @@
+# .NET Build outputs
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+
+# Visual Studio
+.vs/
+*.dbmdl
+*.jfm
+
+# Rider (JetBrains)
+.idea/
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
+logs/
+
+# Environment / secrets
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+*.env
+.env
+.env.*
+
+# Certificates
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+
+# Node (se houver scripts auxiliares)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Published output
+publish/
+
+# Claude IA
+CLAUDE.md
