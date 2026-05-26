@@ -10,13 +10,21 @@
         <CColumn field="cpf" header="CPF"></CColumn>
         <CColumn>
             <template #body="slotProps">
-                <CButton label="editar" severity="secondary" @click="editRegistration(slotProps.data)" />
+                <CButton label="editar" severity="secondary" @click="$emit('edit', slotProps.data)" />
             </template>
         </CColumn>
     </CDataTable>
+
+    <NewPersonForm />
 </template>
 
 <script setup lang="ts">
+//import NewPersonForm from './NewPersonForm.vue';
+import type { DataPersonModel } from '@/models/frontend/DataPersonModel';
+
+
+defineEmits<{ edit: [person: DataPersonModel] }>();
+
 
 const people = [
     { name: 'Adam', lastname: 'Smith', cpf: '123.456.789-00' },
@@ -26,11 +34,6 @@ const people = [
     { name: 'Sophie', lastname: 'Martin', cpf: '654.987.321-00' },
     { name: 'Hanna', lastname: 'Schmidt', cpf: '789.123.456-00' }
 ];
-
-function editRegistration(person: typeof people[0]) {
-    console.log('Editar:', person);
-    // aqui emitir um evento, abrir tela de edição.
-}
 
 
 </script>

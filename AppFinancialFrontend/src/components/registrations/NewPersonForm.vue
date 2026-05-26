@@ -21,30 +21,33 @@
 
         <p>Dados bancários</p>
 
-        <CFormField name="banckAccount" initialValue="" class="flex flex-col gap-1">
+        <CFormField name="bankName" initialValue="" class="flex flex-col gap-1">
             <CInputText type="text" placeholder="Instituição bancária" />
         </CFormField>
-        
-        <CFormField name="banckAccount" initialValue="" class="flex flex-col gap-1">
+
+        <CFormField name="agency" initialValue="" class="flex flex-col gap-1">
             <CInputText type="text" placeholder="Agência" />
         </CFormField>
 
-         <CFormField name="banckAccount" initialValue="" class="flex flex-col gap-1">
-             <CInputText type="text" placeholder="Conta" />
-         </CFormField>
+        <CFormField name="accountNumber" initialValue="" class="flex flex-col gap-1">
+            <CInputText type="text" placeholder="Conta" />
+        </CFormField>
 
-          <CFormField name="banckAccount" initialValue="" class="flex flex-col gap-1">
-              <CInputText type="text" placeholder="Tipo de conta" />
-          </CFormField>
-            
+        <CFormField name="accountType" initialValue="" class="flex flex-col gap-1">
+            <CInputText type="text" placeholder="Tipo de conta" />
+        </CFormField>
+
 
         <CButton type="submit" severity="secondary" label="Salvar" />
     </CForm>
 </template>
+
 <script setup lang="ts">
+import type { DataPersonModel } from '@/models/frontend/DataPersonModel';
 
-
-
+const props = defineProps<{
+    dataPerson?: DataPersonModel | null;
+}>();
 
 
 
