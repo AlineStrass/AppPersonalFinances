@@ -11,7 +11,7 @@ import { createPinia } from 'pinia';
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
 import { definePreset } from '@primeuix/themes';
-import { registerPrimeVueComponents } from './plugins/primevue';
+import { registerPrimeVueComponents } from './plugins/ComponentesPrimeVue.ts';
 
 import App from './App.vue';
 import router from './router/router';
@@ -46,6 +46,7 @@ app.use(PrimeVue, {
     preset: MyPreset
   }
 });
+
 registerPrimeVueComponents(app);
 
 app.mount('#app');

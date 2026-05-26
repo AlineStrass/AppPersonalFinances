@@ -3,27 +3,6 @@
     <PanelMenu :model="items" class="w-full md:w-80 sidebar" />
   </div>
 
-  <!-- <aside class="sidebar">
-    <nav>
-      <ul>
-        <li>
-          <RouterLink to="/" class="menu-item">
-            Início
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/contas-pagar" class="menu-item">
-            Contas a Pagar
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/contas-receber" class="menu-item">
-            Contas a Receber
-          </RouterLink>
-        </li>
-      </ul>
-    </nav>
-  </aside> -->
 </template>
 
 <script setup lang="ts">
@@ -33,20 +12,51 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-
 const items = ref([
   {
     label: 'Início',
     command: () => router.push('/'),
   },
   {
-    label: 'Contas a Pagar',
+    label: 'Contas a pagar',
     command: () => router.push('/contas-pagar'),
   },
   {
-    label: 'Contas a Receber',
+    label: 'Contas a receber',
     command: () => router.push('/contas-receber'),
   },
+  {
+    label: 'Investimentos',
+    command: () => router.push('/investimentos'),
+  },
+  {
+    label: 'Cadastros',
+    command: () => router.push('/cadastros'),
+    // items: [
+    //   {
+    //     label: 'Pessoa',
+    //     command: () => router.push('/cadastros/pessoa'),
+    //   },
+
+    //   {
+    //     label: 'Fornecedor',
+    //     command: () => router.push('/cadastros/fornecedor'),
+    //   },
+    //   {
+    //     label: 'Conta bancária',
+    //     command: () => router.push('/cadastros/conta-bancaria'),
+    //   },
+    //   {
+    //     label: 'Centro de custo',
+    //     command: () => router.push('/cadastros/centro-custo'),
+    //   },
+    //   {
+    //     label: 'Método de pagamento',
+    //     command: () => router.push('/cadastros/metodo-pagamento'),
+    //   },
+    // ],
+  },
+
 ])
 </script>
 

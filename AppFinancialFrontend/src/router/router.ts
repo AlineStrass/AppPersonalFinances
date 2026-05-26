@@ -8,6 +8,13 @@ import AccountsReceivableView from '../views/AccountsReceivableView.vue';
 import AccountsReceivableCard from '@/components/accounts-receivable/AccountsReceivableCard.vue';
 import AccountsReceivableList from '@/components/accounts-receivable/AccountsReceivableList.vue';
 import NewAccountReceivableForm from '@/components/accounts-receivable/NewAccountsReceivableForm.vue';
+import FinancialInvestments from '@/components/financial-investments/FinancialInvestments.vue';
+import NewPersonForm from '@/components/registrations/NewPersonForm.vue';
+import NewSupplierForm from '@/components/registrations/NewSupplierForm.vue';
+import NewBankAccountForm from '@/components/registrations/NewBankAccountForm.vue';
+import NewCostCenterForm from '@/components/registrations/NewCostCenterForm.vue';
+import NewPaymentMethodForm from '@/components/registrations/NewPaymentMethodForm.vue';
+import RegistrationsView from '@/views/RegistrationsView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +72,53 @@ const router = createRouter({
       component: NewAccountReceivableForm,
     },
     //#endregion 
+
+    //#region Investimentos
+    {
+      path: '/investimentos',
+      name: 'investimentos',
+      component: FinancialInvestments,
+    },
+    //#endregion
+
+    //#region Cadastros
+    {
+      path: '/cadastros',
+      component: RegistrationsView,
+      children: [
+        {
+          path: '',
+          name: 'cadastros',
+          redirect: '/cadastros/pessoa',  // rota padrão ao entrar em /cadastros
+        },
+        {
+          path: 'pessoa',
+          name: 'cadastro de pessoa',
+          component: NewPersonForm,
+        },
+        {
+          path: 'fornecedor',
+          name: 'cadastro de fornecedor',
+          component: NewSupplierForm,
+        },
+        {
+          path: 'conta-bancaria',
+          name: 'cadastro de conta bancária',
+          component: NewBankAccountForm,
+        },
+        {
+          path: 'centro-custo',
+          name: 'cadastro de centro de custo',
+          component: NewCostCenterForm,
+        },
+        {
+          path: 'metodo-pagamento',
+          name: 'cadastro de método de pagamento',
+          component: NewPaymentMethodForm,
+        }
+      ]
+    },
+    //#endregion
   ],
 })
 
