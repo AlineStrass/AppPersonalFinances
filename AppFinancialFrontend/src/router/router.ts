@@ -9,12 +9,12 @@ import AccountsReceivableCard from '@/components/accounts-receivable/AccountsRec
 import AccountsReceivableList from '@/components/accounts-receivable/AccountsReceivableList.vue';
 import NewAccountReceivableForm from '@/components/accounts-receivable/NewAccountsReceivableForm.vue';
 import FinancialInvestments from '@/components/financial-investments/FinancialInvestments.vue';
-import NewPersonForm from '@/components/registrations/NewPersonForm.vue';
-import NewSupplierForm from '@/components/registrations/NewSupplierForm.vue';
-import NewBankAccountForm from '@/components/registrations/NewBankAccountForm.vue';
-import NewCostCenterForm from '@/components/registrations/NewCostCenterForm.vue';
-import NewPaymentMethodForm from '@/components/registrations/NewPaymentMethodForm.vue';
 import RegistrationsView from '@/views/RegistrationsView.vue';
+import SupplierView from '@/views/SupplierView.vue';
+import BankAccountView from '@/views/BankAccountView.vue';
+import CostCenterView from '@/views/CostCenterView.vue';
+import PaymentMethodView from '@/views/PaymentMethodView.vue';
+import PersonView from '@/views/PersonView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -94,27 +94,27 @@ const router = createRouter({
         {
           path: 'pessoa',
           name: 'cadastro de pessoa',
-          component: NewPersonForm,
+          component: PersonView,
         },
         {
           path: 'fornecedor',
           name: 'cadastro de fornecedor',
-          component: NewSupplierForm,
+          component: SupplierView,
         },
         {
           path: 'conta-bancaria',
           name: 'cadastro de conta bancária',
-          component: NewBankAccountForm,
+          component: BankAccountView,
         },
         {
           path: 'centro-custo',
           name: 'cadastro de centro de custo',
-          component: NewCostCenterForm,
+          component: CostCenterView,
         },
         {
           path: 'metodo-pagamento',
           name: 'cadastro de método de pagamento',
-          component: NewPaymentMethodForm,
+          component: PaymentMethodView,
         }
       ]
     },

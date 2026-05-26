@@ -16,6 +16,7 @@ import Tabs from 'primevue/tabs';
 import TabList from 'primevue/tablist';
 import TabPanel from 'primevue/tabpanel';
 import TabPanels from 'primevue/tabpanels';
+import Listbox from 'primevue/listbox';
 
 
 
@@ -36,4 +37,5 @@ export function registerPrimeVueComponents(app: App) {
     app.component('CTab', Tab)
     app.component('CTabPanels', TabPanels)
     app.component('CTabPanel', TabPanel)
+    app.component('CListbox', Listbox)
 }

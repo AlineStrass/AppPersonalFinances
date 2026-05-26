@@ -32,29 +32,6 @@ const items = ref([
   {
     label: 'Cadastros',
     command: () => router.push('/cadastros'),
-    // items: [
-    //   {
-    //     label: 'Pessoa',
-    //     command: () => router.push('/cadastros/pessoa'),
-    //   },
-
-    //   {
-    //     label: 'Fornecedor',
-    //     command: () => router.push('/cadastros/fornecedor'),
-    //   },
-    //   {
-    //     label: 'Conta bancária',
-    //     command: () => router.push('/cadastros/conta-bancaria'),
-    //   },
-    //   {
-    //     label: 'Centro de custo',
-    //     command: () => router.push('/cadastros/centro-custo'),
-    //   },
-    //   {
-    //     label: 'Método de pagamento',
-    //     command: () => router.push('/cadastros/metodo-pagamento'),
-    //   },
-    // ],
   },
 
 ])
